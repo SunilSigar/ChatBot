@@ -13,7 +13,7 @@ import 'rxjs/add/operator/map';
 export class HomeComponent implements OnInit {
 
   inputMsg = ''; // text entered by user
-  conversation = []; // hold all msg of user and bot
+  conversation = ["hi", "hello"]; // hold all msg of user and bot
 
   constructor(private http: Http) { }
 

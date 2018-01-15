@@ -2,8 +2,25 @@
 <div class="row">
     <div id="qnimate" class="popup-box">
         <div class="popup-box-container row flex">
-                <div class="popup-head chat-header-content row flex ai-center popupHeader" id="popup-head1">hi</div>
-                <div class="popup-messages-history row">hey</div>
+                <div class="popup-head chat-header-content row flex ai-center popupHeader" id="popup-head1">
+                    <div class="headerHeight">
+                        <p class="head-top-content">Chat Bot</p>
+                    </div>
+                </div>
+                <div class="popup-messages-history row">
+                    <div class="popup-messages col-sm-12 col-md-12 col-xs-12">
+                        <div *ngFor="let value of conversation" style="line-height: 0 !important;">
+                            <div class="userWrapperStyle flex ai-end ">
+                                <span class="userStyle">{{value}}</span>
+                                <img class="botImage" src=".//.//assets/images/person.png">    
+                            </div>
+                            <div class="bot-content flex ai-end">
+                                <img class="botImage1" src=".//.//assets/images/steel_bot_circle.png">
+                                <div class="botDiv"><span class="botSpan"></span>>{{value}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="popup-messages-footer col-sm-12 col-md-12 col-xs-12" style="clear:both;border: darkgray 1px solid;" >hm</div>
         </div>
     </div>
