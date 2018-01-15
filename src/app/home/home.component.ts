@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   keypressed($event){
     if($event.keyCode == 13) {
       this.addMsg();
-      this.login();
+      // this.login();
     }
   }
 

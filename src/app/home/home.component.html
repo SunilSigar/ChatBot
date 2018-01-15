@@ -1,4 +1,3 @@
-<textarea [(ngModel)]="inputMsg" placeholder="Type your message" (keypress)="keypressed($event)"></textarea>
 <div class="row">
     <div id="qnimate" class="popup-box">
         <div class="popup-box-container row flex">
@@ -16,12 +15,16 @@
                             </div>
                             <div class="bot-content flex ai-end">
                                 <img class="botImage1" src=".//.//assets/images/steel_bot_circle.png">
-                                <div class="botDiv"><span class="botSpan"></span>>{{value}}</div>
+                                <div class="botDiv"><span class="botSpan"></span>>Ha {{value}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="popup-messages-footer col-sm-12 col-md-12 col-xs-12" style="clear:both;border: darkgray 1px solid;" >hm</div>
+                <div class="popup-messages-footer col-sm-12 col-md-12 col-xs-12" style="clear:both;border: darkgray 1px solid;" >
+                    <textarea [(ngModel)]="inputMsg" (keypress)="keypressed($event)" class="resiText" id="status_message" placeholder="Type your message(max 255 char.)" name="message" maxlength="255"  autofocus ></textarea>
+                    <img src='.//.//assets/images/send.png' class='enterIcon' />
+                    <img id="micImg" src=".//.//assets/images/mic_icon.png" class="micIconFooter pull-right enterIcon ">
+                </div>
         </div>
     </div>
 </div>

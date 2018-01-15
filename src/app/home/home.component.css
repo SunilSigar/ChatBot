@@ -239,3 +239,26 @@
      width: 45px;
      height: 45px;
  }
+ .resiText {
+    box-sizing: border-box;
+    resize: none;
+    width: 78%;
+    color: black;
+}
+#status_message::-webkit-scrollbar{
+	width: 10px;
+	background-color: white;
+}
+
+#status_message::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background-color: rgba(230, 240, 246, 1)
+}
+.enterIcon{
+    vertical-align: top;
+    width: 21px;
+    height: 21px;
+    margin-top: 12px;
+   
+    margin-right: 11px;
+}
