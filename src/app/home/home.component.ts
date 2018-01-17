@@ -26,13 +26,13 @@ export class HomeComponent implements OnInit {
   //login user for first time
   login(){  
                 console.log("inside login");
-                this.dataObj['userName']='a1@gmail.com';
-                this.dataObj['password']='123';
+                this.dataObj['userName']='';
+                this.dataObj['password']='';
 
                 let headers = new Headers({ 'Content-Type': 'application/json',
-                                'Authorization': 'Bearer 25d94a24-eec6-38aa-bf39-aedbe0964107' });
+                                'Authorization': 'Bearer ' });
                 let options = new RequestOptions({ headers: headers });
-                let url: "https://csva-pension-bot-controller-dot-acn-csva-project.appspot.com/login/authenticate";                         
+                let url: "https://csva-pension-bot-controller-dot-acn-csva-project.appspot.com/login/";                         
                 let data = this.dataObj;                                
 
                 let res = this.http.post(url, data, options).map((res: Response) => res.json());
